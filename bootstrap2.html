@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>First Bootstrap assignment</title>
+<meta charset= "utf-8">
+<meta name="description" content="This is an assignment for NSS2013" </>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="bootstrap2.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="popover.js" type="text/javascript"></script>
+
+
+
+<style>
+
+    /* Large desktop */
+    @media (min-width: 1200px) { }
+     
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) {}
+     
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {  }
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) { .box{ background-color: blue;} }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+					<div class="span3 boot offset2">Bootstrap Exercise</div>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">About</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Contact</a>
+              </li>
+              <li class="">
+                <!-- <a href="./base-css.html">Dropdown</a> -->
+                		<ul class="nav">
+						  <li class="dropdown">
+						    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						      Dropdown
+						      <b class="caret"></b>
+						    </a>
+						    <ul class="dropdown-menu">
+						      If you are reading this, give Jay a High-five!
+						    </ul>
+						  </li>
+						</ul>
+              </li>             
+            </ul>
+    <form class="navbar-search offset5">
+    <input type="text" class="search-query" placeholder="Search">
+    </form>
+          </div>
+       
+      </div>
+    </div>  <!-- end of nav section -->
+
+
+    <!-- beginning of main page -->
+<div class="row-fluid">
+	<div class="span10 offset1"></div>
+	<div class="span9 blue offset1">
+		<div class="row-fluid">
+			<div class="span6 ">  
+				<div class="hello">
+				  <h2 id="headline1">Hello, World!</h2>
+				  <p id="info" >This is a template for a simple marketing or informational website.  It includes a large callout called the hero unit and three supporting pieces of content.  Use it as a starting pint to create something more unique.</p>
+				  <p>
+				    <a class="btn btn-primary btn-large">
+				      Learn more
+				    </a>
+				  </p>
+				</div>
+			</div>
+				<div class="span6 box">  
+						<div id="myCarousel" class="carousel slide">
+						  <ol class="carousel-indicators">
+						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						  </ol>
+						  <!-- Carousel items -->
+						  <div class="carousel-inner">
+						    <div class="active item">
+						    	<img src="slide02.jpg" alt="" />
+						    </div>
+						    <div class="item"><img src="WainsHouse.jpg" alt="" /></div>
+						    <div class="item"><img src="HouseElegant.jpg" alt="" /></div>
+						  </div>
+						  <!-- Carousel nav -->
+						  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+						  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+						</div>
+
+
+
+
+				</div>  <!-- end of slideshow div -->
+		</div>
+	</div>  <!-- end of blue -->
+
+<div class="span10 offset1"></div>
+	<div class="alert alert-info span9 offset1">
+  		<button type="button" class="close" data-dismiss="alert">&times; 
+  		</button>
+  		<strong>Heads Up!</strong> This alert box is simply here to give you 	some information.
+		</div> <!-- end of alert -->
+
+	<div class="span7 offset1" >
+		<h2 id="headline2">This is what we do</h2>
+				  <p id="info">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+					<!-- Button to trigger modal -->
+					<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+					 
+					<!-- Modal -->
+					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					    <h3 id="myModalLabel">Modal header</h3>
+					  </div>
+					  <div class="modal-body">
+					    <p>One fine body…</p>
+					  </div>
+					  <div class="modal-footer">
+					    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+					    <button class="btn btn-primary">Save changes</button>
+					  </div>
+					</div>
+
+
+	</div> <!-- end of span7 -->
+
+	<div class="span2 sidebar">
+		<h3 id="headline2">Sidebar</h3>
+				  <p id="info">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+
+	 	<div id="pop1" class="popover" align="center">
+		NSS rules!
+		<a href="javascript:closePopOver('pop1');">Close</a>
+		</div>
+	<a href="javascript:showPopOver('pop1');"><b>View a popover</b></a>
+
+
+
+	
+	</div> <!-- end of span3 -->
+
+
+	<div class="row-fluid">
+		<div class="span10 offset1"></div>
+		<div class="span3 offset1">
+			<h2 id="headline3">Who We Are</h2>
+				  <p id="info">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+
+				  <p>
+				    <a class="btn">
+				      Read more
+				    </a>
+				  </p>
+
+
+		</div>
+
+		<div class="span3">
+			<h2 id="headline3">What We Do</h2>
+				  <p id="info">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+
+				  <p>
+				    <a class="btn">
+				      Read more
+				    </a>
+				  </p>
+
+
+		</div>
+	
+		<div class="span3">
+			<h2 id="headline3">How We Work</h2>
+				  <p id="info">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+
+				  <p>
+				    <a class="btn">
+				      Read more
+				    </a>
+				  </p>
+
+
+		</div>
+	</div> <!-- end of row fluid -->
+
+	<div class="row-fluid">
+		<div class="span10 offset1"></div>
+		<div class="span9 lightBlue offset1">
+			<h2 id="headline3" class="center offset4">Sign up for our newsletter</h2>
+
+			<form class="form-horizontal span3 offset3">
+            <div class="control-group">
+              <label class="control-label" for="inputIcon">Email address</label>
+              <div class="controls">
+                <div class="input-prepend">
+                  <span class="add-on"><i class="icon-envelope"></i></span><input class="span12" id="inputIcon" type="text">
+                </div>
+                </div>
+                </div>
+              <!-- </div> -->
+          </form>
+
+
+
+
+		</div>  <!-- end of span9 -->
+
+	</div> <!-- end of light blue row -->
+          <footer class="offset1">
+  			<br>
+  			<p> &copy Company 2013</p>
+  			</footer>
+
+</div>  <!-- end of row -->	
+
+</body>
+
+</html>
